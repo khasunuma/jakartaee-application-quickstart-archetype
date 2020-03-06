@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>ear</packaging>
+  <dependencies>
+    <!-- Examples:
+    <dependency>
+      <groupId>com.poortoys.myapp</groupId>
+      <artifactId>mywebapp</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.poortoys.myapp</groupId>
+      <artifactId>mybeans</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    -->
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>3.0.1</version>
+        <configuration>
+          <modules>
+            <!-- Examples:
+            <webModule>
+              <groupId>com.poortoys.myapp</groupId>
+              <artifactId>mywebapp</artifactId>
+              <bundleFileName>mywebapp.war</bundleFileName>
+            </webModule>
+            <ejbModule>
+              <groupId>com.poortoys.myapp</groupId>
+              <artifactId>mybeans</artifactId>
+              <bundleFileName>mybeans.jar</bundleFileName>
+            </ejbModule>
+            -->
+          </modules>
+          <version>8</version>
+          <defaultLibBundleDir>lib</defaultLibBundleDir>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
