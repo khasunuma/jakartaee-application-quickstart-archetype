@@ -1,5 +1,5 @@
 # jakartaee-application-quickstart-archetype
-Jakarta EE Enterprise Application quick start template
+Jakarta EE Enterprise Application Quick Start Template
 
 ## Requirements
 
